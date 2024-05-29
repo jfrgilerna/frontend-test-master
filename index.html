@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <link rel="stylesheet" href="scss/css/normalize.css">
+   <link rel="stylesheet" href="scss/css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+   <header> 
+    <nav>
+        <div class="menu">
+            <img src="svg/menu.svg" alt="menu">
+            <img src="svg/logo.svg" alt="logo">
+        </div>
+        <div class="search">
+            <img src="svg/search.svg" alt="search">
+            <img src="svg/cart.svg" alt="cart">
+        </div>
+    </nav>
+    </header>
+        <main>
+            <div>
+            <h1>Cervezas</h1>
+            
+            <script id="template-handlebars" type="text/x-handlebars-template">    
+            {{#each products }}
+                <div class="card">
+                    <img src="img/{{img}}" alt="{{name}}">
+                    <h4>{{name}}</h4>
+                    <p>{{description}}</p>
+                    <h4>${{price}}</h4>
+                    <div id="btn">AGREGAR</div>    
+                </div>
+            {{/each}}
+            </script>
+            <div id="productos"></div>
+            <section>
+                <div>
+                    <p>Sigue mercando</p>
+                    <h3>Vinos</h3>
+                </div>
+                <div>
+                    <img src="svg/arrow-right.svg" alt="flecha">
+                </div>
+            </section>
+        </div>
+        </main>
+        <footer>
+            <div class="contacto">
+                <h4>¿Podemos Ayudarte?</h4>
+                <div class="container">
+                <figure>
+                    <img src="svg/intercom.svg" alt="chat">
+                    <figcaption>CHAT</figcaption>
+                </figure>
+                <figure>
+                    <img src="svg/phone.svg" alt="telefono">
+                    <figcaption>LLAMAR</figcaption>
+                </figure>
+                </div>
+                <div class="enlaces">
+                <h6>SOBRE NOSOTROS</h6>
+                <h6>MEDIDAS DE SEGURIDAD (COVID-19)</h6>
+                <h6>CÓMO MERCAR</h6>
+                <h6>PROVEEDORES</h6>
+                <h6>CONTÁCTENOS</h6>
+                <h6>ZONA DE COBERTURA</h6>
+                <img src="svg/instagram.svg" alt="instagram">
+                <h6>POLÍTICA DE TRATAMIENTO DE DATOS FERSONALES</h6>
+                </div>
+                <div class="filtro">
+                        <button class="btnx">x</button>
+                    <h3>Filtro</h3>
+                      <div>
+                        <label  for="btncheck1"Rubia>Rubia</label>
+                        <input id="btncheck1" class="btncheck" type="checkbox" name="checkboxGroup" id="rubia" value="1" >
+                    </div>
+                    <div>   
+                         <label for="btncheck2">Morena</label>
+                        <input id="btncheck2" class="btncheck" type="checkbox" name="checkboxGroup" id="morena" value="2" >
+                    </div>
+                    <div>
+                    <label for="btncheck3">Roja</label>
+                    <input id="btncheck3" class="btncheck" type="checkbox" name="checkboxGroup" id="roja" value="3" >
+                    </div>
+                    <div class="btnfilters">
+                    <button class="btnf1" type="reset">LIMPIAR</button>
+                    <button class="btnf2">FILTRAR    
+                        <img src="svg/filters.svg"> 
+                    </button>
+                    </div>      
+                   
+                </div>
+                <button class="btnfilter">FILTRAR
+                <img src="svg/filters.svg">
+                </button>  
+            </div>
+        </footer>  
+</body>
+</html>
