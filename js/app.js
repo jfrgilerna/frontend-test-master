@@ -119,7 +119,7 @@ carga();
     ocultar(); 
     refrescar();
     guardar();
-    console.log(idn);
+    
   
   });
   

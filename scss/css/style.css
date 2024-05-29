@@ -67,6 +67,13 @@ main section {
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
+@media only screen and (min-width: 1100px) {
+  main #productos {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+  }
+}
 
 footer .contacto {
   background-color: black;
@@ -204,6 +211,12 @@ footer .filtro div .btncheck {
   border: 0.1rem solid rgb(224, 224, 224);
   color: white;
   accent-color: blue;
+}
+@media only screen and (min-width: 1100px) {
+  footer .filtro {
+    width: 50%;
+    left: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

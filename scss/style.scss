@@ -43,7 +43,7 @@ nav{
 }     
 
 }
-
+ 
 main{
     h1{
         padding-top: 2rem;
@@ -53,7 +53,7 @@ main{
         grid-template-columns: repeat(2,40%);
         gap: 1rem;
         justify-content: center;
-        
+         
         
 
     }
@@ -93,6 +93,14 @@ main{
         border-radius: 0.2rem;
         
     }
+    @media only screen and (min-width: 1100px)  {
+        #productos{
+            display: grid;
+            grid-template-columns: repeat(4,20%);
+            justify-content: center;
+        }
+     }
+    
 }
 
 footer{
@@ -230,10 +238,14 @@ footer{
                 border: 0.1rem solid $colorfilter;
                 color: $colorprin;
                 accent-color: $colorter;
-            }
-           
-            
+            }     
     }
+    }
+    @media only screen  and (min-width: 1100px) {
+        .filtro{
+            width: 50%;
+            left: 25%;  
+        }
     }
 }
 
